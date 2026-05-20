@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Anniversary 💖</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Floating background hearts/sparkles -->
+<div class="bg-decor" id="bgDecor"></div>
+
+<!-- Audio control -->
+<button id="muteBtn" class="mute-btn" title="Mute / Unmute">🔊</button>
+
+<!-- =================== BAGIAN 0: OPENING =================== -->
+<section class="section section-0 active" id="section-0">
+  <div class="opening-content">
+    <div class="floating-heart">💖</div>
+    <h1 class="typing" id="typingText"></h1>
+    <br>
+    <button class="cta-btn" id="startBtn">Klik untuk mulai 💕</button>
+  </div>
+</section>
+
+<!-- =================== BAGIAN 1: AWAL CERITA =================== -->
+<section class="section section-1" id="section-1">
+  <div class="story-container">
+    <h2 class="section-title">Awal Cerita Kita ✨</h2>
+
+    <!-- Foto Awal Cerita: ganti src di bawah dengan foto kalian (atau taruh file foto-awal.jpg di folder ini) -->
+    <div class="story-photo reveal">
+      <div class="story-photo-frame">
+        <img id="storyPhoto" src="foto/anniv.jpg" alt="Foto awal cerita kita"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="story-photo-placeholder">
+          <span>📷</span>
+          <small>Taruh foto kalian di sini<br>(ganti <code>foto-awal.jpg</code>)</small>
+        </div>
+      </div>
+      <div class="story-photo-frame">
+        <img id="storyPhoto" src="foto/foto0.jpg" alt="Foto awal cerita kita"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="story-photo-placeholder">
+          <span>📷</span>
+          <small>Taruh foto kalian di sini<br>(ganti <code>foto-awal.jpg</code>)</small>
+        </div>
+      </div>
+      <p class="photo-caption">Awal dari segalanya 💕</p>
+    </div>
+
+    <div class="story-block reveal">
+      <div class="story-illustration">🌸</div>
+      <p>Masih ku ingat, hari pertama kita bertemu, menjadi ketua dan wakil PLS 2...</p>
+    </div>
+    <div class="story-block reveal">
+      <div class="story-illustration">✨</div>
+      <p>Senyum mu yang malu-malu dan tatapan mata yang manis</p>
+    </div>
+    <div class="story-block reveal">
+      <div class="story-illustration">💌</div>
+      <p>Dan dari awal itu, kita terus bersama dalam hampir semua kegiatan</p>
+    </div>
+    <div class="story-block reveal">
+      <div class="story-illustration">🌷</div>
+      <p>Tuhan benar-benar tahu cara mempertemukan dua hati yang tepat.</p>
+    </div>
+    <button class="cta-btn next-btn" data-next="section-2">Lanjut Kenangan 💕</button>
+
+  </div>
+</section>
+
+<!-- =================== BAGIAN 2: KENANGAN =================== -->
+<section class="section section-2" id="section-2">
+  <div class="memories-container">
+    <h2 class="section-title">Kenangan Kita 📸</h2>
+    <p class="subtitle">Setiap momen, setiap cerita, setiap tawa, itu semua istimewa</p>
+    <div class="polaroid-grid">
+      <div class="polaroid"><img src="foto/foto0.jpg" alt="First Date"><p>First Date 💕</p></div>
+      <div class="polaroid"><img src="foto/foto1.jpeg" alt="Movie Night"><p>Yamie yeay🍜</p></div>
+      <div class="polaroid"><img src="foto/foto2.jpeg" alt="Sunset Walk"><p>Nunggu ujian 📑</p></div>
+      <div class="polaroid"><img src="foto/foto3.jpeg" alt="Coffee Date"><p>Coffee Date ☕</p></div>
+      <div class="polaroid"><img src="foto/foto4.jpeg" alt="Liburan"><p>Nugas MPK 💗</p></div>
+      <div class="polaroid"><img src="foto/foto5.jpeg" alt="Just Us"><p>TM sarseh 💞</p></div>
+      <div class="polaroid"><img src="foto/foto6.jpeg" alt="Hujan Bareng"><p>Beli sepatu 🏃</p></div>
+      <div class="polaroid"><img src="foto/foto7.jpeg" alt="Makan Favorit"><p>Hidjau ☕</p></div>
+      <div class="polaroid"><img src="foto/foto8.jpeg" alt="Ulang Tahun"><p>Nongki 🎂</p></div>
+      <div class="polaroid"><img src="foto/foto9.jpeg" alt="Forever"><p>Yamie versi ingusan 🤧</p></div>
+      <div class="polaroid"><img src="foto/foto10.jpeg" alt="First Date"><p>Markoo 😆</p></div>
+      <div class="polaroid"><img src="foto/foto11.jpeg" alt="Movie Night"><p>Pagelll 💃🕺</p></div>
+      <div class="polaroid"><img src="foto/foto12.jpeg" alt="Sunset Walk"><p>Bapalasa Biru 😈</p></div>
+      <div class="polaroid"><img src="foto/foto13.jpeg" alt="Coffee Date"><p>TeCieR 🫂</p></div>
+      <div class="polaroid"><img src="foto/foto14.jpeg" alt="Liburan"><p>Bioskop Date 🎬</p></div>
+      <div class="polaroid"><img src="foto/foto15.jpeg" alt="Just Us"><p>Bali, Panglipuran 💞</p></div>
+      <div class="polaroid"><img src="foto/foto16.jpeg" alt="Hujan Bareng"><p>Bali, Pura 🗺️</p></div>
+      <div class="polaroid"><img src="foto/foto17.jpeg" alt="Makan Favorit"><p>Bali, Bedugul 🏞️</p></div>
+      <div class="polaroid"><img src="foto/foto18.jpeg" alt="Ulang Tahun"><p>Bali, Favorite 💖</p></div>
+      <div class="polaroid"><img src="foto/foto19.jpeg" alt="Forever"><p>Bali, Hotel 🏢</p></div>
+      <div class="polaroid"><img src="foto/foto20.jpeg" alt="Just Us"><p>Foto Kita blur 😋</p></div>
+      <div class="polaroid"><img src="foto/foto21.jpeg" alt="Hujan Bareng"><p>Makan (lagi)🍜</p></div>
+      <div class="polaroid"><img src="foto/foto22.jpeg" alt="Makan Favorit"><p>Habis Depa, UGM ☕</p></div>
+      <div class="polaroid"><img src="foto/foto23.jpeg" alt="Ulang Tahun"><p>Last in SMA👋</p></div>
+      <div class="polaroid"><img src="foto/foto24.jpeg" alt="Forever"><p>Graduate, Forever 💖</p></div>
+    </div>
+
+    <p class="hint">💖 2 tahun kenangan yang telah kita ukir bersama <code>i love you sayang 💞</code></p>
+    <button class="cta-btn next-btn" data-next="section-3">Lihat Semesta Kita 🌌</button>
+  </div>
+</section>
+
+<!-- =================== BAGIAN 3: THE UNIVERSE =================== -->
+<section class="section section-3" id="section-3">
+  <div class="universe">
+    <div class="stars-bg" id="starsBg"></div>
+    <div class="star star-a" id="starA"></div>
+    <div class="star star-b" id="starB"></div>
+    <div class="star-merged" id="starMerged"></div>
+    <div class="universe-text">
+      <p id="uniText1">dari dua yang asing...</p>
+      <p id="uniText2">menjadi satu hati ✨</p>
+    </div>
+    <button class="cta-btn next-btn universe-next" data-next="section-4">Pesan Untukmu 💌</button>
+  </div>
+</section>
+
+<!-- =================== BAGIAN 4: FINAL MESSAGE =================== -->
+<section class="section section-4" id="section-4">
+  <div class="letter-container">
+    <h2 class="section-title">Untukmu, Sayangku 💌</h2>
+    <p class="hint italic">baca pelan-pelan ya, resapi ya sayangg, kalau bisa sampai backsoundnya selesai...</p>
+    <div class="letter" id="letterText"></div>
+    <button class="cta-btn next-btn" id="surpriseBtn">Ada kejutan untukmu 🎉</button>
+  </div>
+</section>
+
+<!-- =================== BAGIAN 5: SURPRISE =================== -->
+<section class="section section-5" id="section-5">
+  <canvas id="confettiCanvas"></canvas>
+  <div class="surprise-content">
+    <div class="big-hearts">
+      <span>❤️</span><span>💖</span><span>💕</span><span>💗</span><span>💝</span>
+    </div>
+    <h1 class="surprise-title">Happy 2nd Anniversary<br>Sayangku ❤️</h1>
+    <p class="surprise-sub">Terima kasih sudah jadi bagian terindah dalam hidupku 💞</p>
+    <button class="cta-btn" onclick="location.reload()">Putar Ulang 🔁</button>
+  </div>
+</section>
+
+<!-- ====== AUDIO (lokal, sudah disertakan di folder /audio) ====== -->
+<!-- Setiap bagian punya backsound bertema sendiri. Ganti file mp3 di folder audio/ jika ingin lagu lain. -->
+<audio id="audio-0" loop preload="auto" src="audio/tenderness.mp3"></audio>          <!-- Opening: imut & manis -->
+<audio id="audio-1" loop preload="auto" src="audio/Ed Sheeran - Perfect (Piano Cover by Riyandi Kusuma).mp3"></audio>     <!-- Awal Cerita: lembut & nostalgia -->
+<audio id="audio-2" loop preload="auto" src="audio/Nadhif Basalamah - kota ini tak sama tanpamu (Official Lyric Video).mp3"></audio>     <!-- Kenangan: hangat & ceria -->
+<audio id="audio-3" loop preload="auto" src="audio/Ed Sheeran - Perfect (Piano Cover by Riyandi Kusuma).mp3"></audio>         <!-- Universe: dreamy & sinematik -->
+<audio id="audio-4" loop preload="auto" src="audio/Glenn Fredly - Kasih Putih [Instrumental Cover] by Aveola Music.mp3"></audio>          <!-- Surat Cinta: piano emosional -->
+<audio id="audio-5" loop preload="auto" src="audio/Christina Perri - A Thousand Years [Official Music Video].mp3"></audio>       <!-- Surprise: romantis penuh perasaan -->
+
+<script src="script.js"></script>
+</body>
+</html>
